@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/widget_background"
+    android:backgroundTint="#04041B"> <TextView
+    android:id="@+id/widget_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="LİSTE BAŞLIĞI"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:padding="5dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"/>
+
+    <ListView
+        android:id="@+id/widget_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Liste Boş"
+        android:textColor="#88FFFFFF"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>
